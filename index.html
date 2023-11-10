@@ -107,6 +107,20 @@
     <a id="downloadButton" href="URL_TO_PDF" download="MertKilicaslanCV.pdf">
       <button>Download CV</button>
     </a>
+		<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const downloadButton = document.getElementById("downloadButton");
+
+  downloadButton.addEventListener("click", function (e) {
+    e.preventDefault(); // Sayfanın yeniden yüklenmesini önlemek için tıklamayı durdur
+
+    // Dosyayı indirme işlemini başlat
+    downloadButton.setAttribute("disabled", "true"); // Butonu devre dışı bırakabilirsiniz
+    window.location.href = downloadButton.getAttribute("href");
+  });
+});
+</script>
+
             <div class="color-changer">
             <div class="color-panel">
                 <img src="images/gear.png" alt="">
