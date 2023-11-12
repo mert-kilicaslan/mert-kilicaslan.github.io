@@ -149,13 +149,32 @@
                      <br>
                <span class="about-second-line"> I have improved myself in the field of DevOps for about 1.5 years and gained experience in the academies of different companies. Apart from DevOps, I have been making unique designs in different fields since my childhood.</span>
                <div class="cv">
-                <a href="#"><button>Download <span class="colors">CV</span></button></a>
+    			<a href="#" id="download-cv-btn"><button>Download <span class="colors">CV</span></button></a>
+	       </div>
             </div>
             </div>
             <!--about picture-->
             <div class="about-img">
-                <img src="images/about.jpg" alt="Your Image">
-            </div>
+   	 	<img src="images/about.jpg" alt="Your Image">
+	    </div>
+            <script>
+    		document.getElementById('download-cv-btn').addEventListener('click', function() {
+       			 // Bu kısımda CV dosyanızın URL'sini belirtin
+        		var cvUrl = 'path/to/your/cv.pdf';
+
+        		// Yeni bir a etiketi oluşturun ve indirme bağlantısını belirtin
+       		 	var downloadLink = document.createElement('a');
+        		downloadLink.href = cvUrl;
+
+        		// Dosyanın adını belirtin (isteğe bağlı)
+        		downloadLink.download = 'your_cv_filename.pdf';
+
+        		// Oluşturulan bağlantıyı tıklayarak indirme işlemini başlatın
+        		downloadLink.click();
+    		});
+	    </script>
+			
+	    
             </div>
     
             </div>
