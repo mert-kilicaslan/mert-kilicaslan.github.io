@@ -160,14 +160,14 @@
             <script>
     		document.getElementById('download-cv-btn').addEventListener('click', function() {
        			 // Bu kısımda CV dosyanızın URL'sini belirtin
-        		var cvUrl = 'path/to/your/cv.pdf';
+        		var cvUrl = 'https://github.com/mert-kilicaslan/mert-kilicaslan.github.io/blob/main/Mert-Kilicaslan-CV-2.pdf';
 
         		// Yeni bir a etiketi oluşturun ve indirme bağlantısını belirtin
        		 	var downloadLink = document.createElement('a');
         		downloadLink.href = cvUrl;
 
         		// Dosyanın adını belirtin (isteğe bağlı)
-        		downloadLink.download = 'your_cv_filename.pdf';
+        		downloadLink.download = 'Mert-Kilicaslan-CV';
 
         		// Oluşturulan bağlantıyı tıklayarak indirme işlemini başlatın
         		downloadLink.click();
